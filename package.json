@@ -27,5 +27,6 @@
   },
   "mocha": {
     "timeout": 10000000
-  }
+  },
+  "dependencies": {}
 }
