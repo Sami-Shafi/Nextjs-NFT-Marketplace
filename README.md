@@ -1,6 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NFT MarketPlace with React-NextJs, Hardhat and Solidity
 
-## Getting Started
+Working on a very cool NFT Marketplace project by the help of Freecodecamp. Thanks to Patrick Collins.
+This is a great course and I am enjoying the learning curve so far.
+
+"`Note: This one is the frontend version and we use moralis and other fun stuff. Switch the branch to check backend code.`"
+
+## Machine Info
+
+Node Version: 16.0.0
+Platform: Windows
+
+"My Note: Markdown Preview Shortcut- `ctrl+shift+v`"
+
+## Tasks
+
+1. `HomePage`
+    1. Show recently listed NFTs
+    2. If you own the NFT, you can update the listing
+    3. If not, you can buy the listing
+2. `SellPage`:
+    1. You can list your NFT on the marketplace
+
+## Getting Started (Next Generated Readme)
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 First, run the development server:
 
@@ -24,8 +47,8 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+-   [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+-   [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
