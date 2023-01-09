@@ -33,9 +33,9 @@ module.exports = {
 	networks: {
 		hardhat: {
 			// // If you want to do some forking, uncomment this
-			forking: {
-				url: MAINNET_RPC_URL,
-			},
+			// forking: {
+			// 	url: MAINNET_RPC_URL,
+			// },
 			chainId: 31337,
 		},
 		localhost: {
@@ -49,6 +49,7 @@ module.exports = {
 			//   },
 			saveDeployments: true,
 			chainId: 5,
+			blockConfirmations: 6,
 		},
 		mainnet: {
 			url: MAINNET_RPC_URL,
@@ -58,12 +59,14 @@ module.exports = {
 			//   },
 			saveDeployments: true,
 			chainId: 1,
+			blockConfirmations: 6,
 		},
 		// polygon: {
 		//     url: POLYGON_MAINNET_RPC_URL,
 		//     accounts: PRIVATE_KEY !== undefined ? [PRIVATE_KEY] : [],
 		//     saveDeployments: true,
 		//     chainId: 137,
+		//  blockConfirmations: 6
 		// },
 	},
 	etherscan: {
