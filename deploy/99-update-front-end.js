@@ -4,13 +4,30 @@ require("dotenv").config();
 
 // lead this path to where the fronend folder is
 const frontEndContractsFile = "../frontend/constants/networkMapping.json";
+const frontEndAbiLocation = "../frontend/constants/";
 
 module.exports = async () => {
 	if (process.env.UPDATE_FRONT_END) {
 		console.log("Updating Front End...");
 		await updateContractAddresses();
+		await updateAbi();
+		console.log("Front End Updated!");
 	}
 };
+
+async function updateAbi() {
+	const nftMarketplace = await ethers.getContract("NftMarketplace");
+	fs.writeFileSync(
+		`${frontEndAbiLocation}NftMarketplace.json`,
+		nftMarketplace.interface.format(ethers.utils.FormatTypes.json)
+	);
+
+	const basicNft = await ethers.getContract("BasicNft");
+	fs.writeFileSync(
+		`${frontEndAbiLocation}BasicNft.json`,
+		basicNft.interface.format(ethers.utils.FormatTypes.json)
+	);
+}
 
 const updateContractAddresses = async () => {
 	const nftMarketplace = await ethers.getContract("NftMarketplace");
@@ -31,8 +48,6 @@ const updateContractAddresses = async () => {
 	}
 
 	fs.writeFileSync(frontEndContractsFile, JSON.stringify(jsonFile));
-	console.log("Front End Updated.");
-	console.log("Json File:", jsonFile);
 };
 
 module.exports.tags = ["all", "frontend"];
