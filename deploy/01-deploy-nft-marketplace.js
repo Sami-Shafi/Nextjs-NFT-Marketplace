@@ -17,7 +17,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
 		from: deployer,
 		args: [],
 		log: true,
-		blockConfirmations: network.config.blockConfirmations || 1,
+		waitConfirmations: network.config.blockConfirmations || 1,
 	});
 
 	log("Deployed.");
