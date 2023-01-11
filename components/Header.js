@@ -6,7 +6,7 @@ export default function Header() {
 		<>
 			<nav className="p-5 border-b-2 flex flex-row jusitfy-between items-center w-100">
 				<h1 className="py-4 px-4 font-bold text-3xl">NFT SEA</h1>
-				<div className="flex flex-row items-center ml-auto">
+				<div className="flex flex-row items-center gap-2 ml-auto">
 					<Link href="/" className="mr-4 p-6">
 						Home
 					</Link>
