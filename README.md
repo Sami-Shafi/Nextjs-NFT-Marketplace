@@ -12,6 +12,10 @@ Platform: Windows
 
 "My Note: Markdown Preview Shortcut- `ctrl+shift+v`"
 
+## Deployment
+
+This project helped me learn a ton of new things. For example, th graph indexer.
+
 ## Tasks
 
 1. `HomePage`
